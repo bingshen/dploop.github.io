@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: https://ruby.taobao.org/
   specs:
     RedCloth (4.2.9)
     activesupport (4.2.4)
@@ -134,3 +134,6 @@ DEPENDENCIES
   execjs
   github-pages
   therubyracer
+
+BUNDLED WITH
+   1.11.2
