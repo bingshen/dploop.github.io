@@ -3,6 +3,66 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
+          {% if site.footer-links-active.linkedin and site.author.linkedin %}
+          <li>
+            <a href="https://linkedin.com/{{ site.author.linkedin }}" title="LinkedIn">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.footer-links-active.github and site.author.github %}
+          <li>
+            <a href="https://github.com/{{ site.author.github }}" title="GitHub">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.footer-links-active.email and site.author.email %}
+          <li>
+            <a href="mailto:{{ site.author.email }}" title="Email me">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.author.stackoverflow and site.footer-links-active.stackoverflow %}
+          <li>
+            <a href="https://stackoverflow.com/users/{{ site.author.stackoverflow }}" title="StackOverflow">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.footer-links-active.qq and site.author.qq %}
+          <li>
+            <a href="http://wpa.qq.com/msgrd?v=3&uin={{ site.author.qq }}&site=qq&menu=yes" title="QQ">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-qq fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
+          {% if site.footer-links-active.weixin and site.author.weixin %}
+          <li>
+            <a href="http://weixin.qq.com/r/{{ site.author.weixin }}" title="WeChat">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-weixin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          {% endif %}
           {% if site.author.facebook and site.footer-links-active.facebook %}
           <li>
             <a href="https://www.facebook.com/{{ site.author.facebook }}" title="Facebook">
@@ -13,17 +73,7 @@
             </a>
           </li>
           {% endif %}
-          {% if site.author.github and site.footer-links-active.github %}
-          <li>
-            <a href="https://github.com/{{ site.author.github }}" title="GitHub">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          {% endif %}
-		  {% if site.author.twitter and site.footer-links-active.twitter %}
+          {% if site.author.twitter and site.footer-links-active.twitter %}
           <li>
             <a href="https://twitter.com/{{ site.author.twitter }}" title="Twitter">
               <span class="fa-stack fa-lg">
@@ -33,62 +83,51 @@
             </a>
           </li>
           {% endif %}
-		  {% if site.author.email and site.footer-links-active.email %}
+          {% if site.author.weibo and site.footer-links-active.weibo %}
           <li>
-            <a href="mailto:{{ site.author.email }}" title="Email me">
+            <a href="http://weibo.com/{{ site.author.weibo }}" title="Weibo">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
               </span>
             </a>
           </li>
           {% endif %}
-		  {% if site.author.linkedin and site.footer-links-active.linkedin %}
+          {% if site.author.zhihu and site.footer-links-active.zhihu %}
           <li>
-            <a href="https://linkedin.com/{{ site.author.linkedin }}" title="LinkedIn">
+            <a href="https://www.zhihu.com/people/{{ site.author.zhihu }}" title="Zhihu">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-send fa-stack-1x fa-inverse"></i>
               </span>
             </a>
           </li>
           {% endif %}
-		  {% if site.author.stackoverflow and site.footer-links-active.stackoverflow %}
+          {% if site.footer-links-active.rss %}
           <li>
-            <a href="https://stackoverflow.com/users/{{ site.author.stackoverflow }}" title="StackOverflow">
+            <a href="{{ '/feed.xml' | prepend: site.baseurl }}" title="RSS">
               <span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
               </span>
             </a>
           </li>
           {% endif %}
-		  {% if site.footer-links-active.rss %}
-		  <li>
-			<a href="{{ '/feed.xml' | prepend: site.baseurl }}" title="RSS">
-			  <span class="fa-stack fa-lg">
-				<i class="fa fa-circle fa-stack-2x"></i>
-				<i class="fa fa-rss fa-stack-1x fa-inverse"></i>
-			  </span>
-			</a>
-		  </li>		
-          {% endif %}		  
         </ul>
         <p class="copyright text-muted">
-		  {{ site.author.name }}
-		  &nbsp;&bull;&nbsp;
-		  {{ site.time | date: '%Y' }}
-		  
-		  {% if site.url-pretty %}
-		  &nbsp;&bull;&nbsp;
-		  <a href="{{ site.url }}">{{ site.url-pretty }}</a>
-		  {% endif %}
-	    </p>
-	        <!-- Please don't remove this, keep my open source work credited :) -->
-		<p class="theme-by text-muted">
-		  Theme by
-		  <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
-		</p>
+          {{ site.author.name }}
+          &nbsp;&bull;&nbsp;
+          {{ site.time | date: '%Y' }}
+          {% if site.url-pretty %}
+          &nbsp;&bull;&nbsp;
+          <a href="{{ site.url }}">{{ site.url-pretty }}</a>
+          {% endif %}
+        </p>
+        <!-- Please don't remove this, keep my open source work credited :) -->
+        <p class="theme-by text-muted">
+          Theme by
+          <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
+        </p>
       </div>
     </div>
   </div>
