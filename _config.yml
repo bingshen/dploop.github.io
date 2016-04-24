@@ -63,7 +63,7 @@ footer-links-active:
   stackoverflow: true
   twitter: false
   weibo: false
-  weixin: true
+  weixin: false
   zhihu: false
 
 # How to display the link to the website in the footer
