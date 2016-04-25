@@ -24,6 +24,8 @@ How about a yummy crepe?
 
 ![Crepe](http://lafenicegelato.com/wp-content/uploads/2014/09/crepes-with-chocolate.jpg)
 
+$$ e^{2 \pi i} + 1 = 0 $$
+
 Here's a code chunk:
 
 ~~~
