@@ -6,7 +6,7 @@ subtitle: Each post also has a subtitle
 
 This is a fomula $ e^{\pi i} + 1 = 0 $ in a line.
 
-$$ \sum_{i=1}^{n} i^2 = \frac{n(n+1)(2n+1))}{6} $$
+$$ \sum_{i=1}^{n} i^2 = \frac{n(n+1)(2n+1)}{6} $$
 
 You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
 
