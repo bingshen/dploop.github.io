@@ -4,7 +4,7 @@ title: About me
 subtitle: In fact, it doesn't matter who i am
 ---
 
----
+
 ### BASIC INFORMATION
 
 
@@ -38,3 +38,4 @@ subtitle: In fact, it doesn't matter who i am
 - Writing
 - Coding
 
+---
