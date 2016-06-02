@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: In fact, it doesn't matter who i am
+subtitle: In fact, it doesn't matter who I am
 ---
 
 ---
