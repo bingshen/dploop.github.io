@@ -86,6 +86,7 @@ markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
+excerpt_separator: '<!-- more -->'
 
 # Default YAML values (more information on Jekyll's site)
 defaults:
