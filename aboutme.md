@@ -6,44 +6,32 @@ subtitle: In fact, it doesn't matter who I am
 
 ---
 
-### BASIC INFORMATION
+### Basic Information
 
 
 ---
 
-### JOB OBJECTIVE
+### Experience
 
 
 ---
 
-### QUALIFICATIONS
+### Education
 
 
 ---
 
-### EDUCATION
+### Honors
 
 
 ---
 
-### EXPERIENCE
+### Skills And Interests
 
 
 ---
 
-### EXTRACURRICULAR ACTIVITIES
+### Extracurricular Activities
 
-
----
-
-### HONORS
-
-
----
-
-### SKILLS AND INTERESTS
-- Reading
-- Writing
-- Coding
 
 ---
