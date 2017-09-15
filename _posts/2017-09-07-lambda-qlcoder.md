@@ -58,5 +58,5 @@ title: An Online Lambda Interpreter
 )) 9)
 ```
 
-现在dploop需要利用该语言写一个`fibonacci`函数，希望"精通"函数式编程的你能够帮他完成。为了方便你的调试，这里提供一个简易的lambda在线编辑器: [An Online Lambda Interpreter](https://dploop.github.io/lambda/editor.html)。
+现在dploop需要利用该语言写一个`fibonacci`函数，希望"精通"函数式编程的你能够帮他完成。为了方便你的调试，这里提供一个简易的lambda在线编辑器: [An Online Lambda Interpreter](https://dploop.github.io/lambda-qlcoder/editor.html)。
 
