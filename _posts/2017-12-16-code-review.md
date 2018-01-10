@@ -19,42 +19,42 @@ title: 记一道有趣的CodeReview题目
 
 由于数组下标越界，其实我们完全可以很武断地认为`rand.next()%100`是个负值，然后就判定是`rand.next()`返回了负值。关于这道题这种判断确实是对的，但未必所有的语言都是这样其实，举一些例子（当然你还可以去尝试更多）：
 
-```JavaScript
+```javascript
 // JavaScript => -1
 console.log((-11) % 5);
 ```
 
-```Lua
+```lua
 -- Lua => 4
 print((-11) % 5)
 ```
 
-```Haskell
+```haskell
 -- Haskell => 4
 show $ mod (-11) 5
 ```
 
-```Python
+```python
 # Python => 4
 print((-11) % 5)
 ```
 
-```Erlang
+```erlang
 % Erlang => -1
 io:format("~w~n", [(-11) rem 5]).
 ```
 
-```MySQL
+```mysql
 -- MySQL => -1
 SELECT (-11) % 5;
 ```
 
-```Perl
+```perl
 # Perl => 4
 print((-11) % 5)
 ```
 
-```C++
+```c++
 // C++ => -1
 #include <iostream>
 int main() {
@@ -63,7 +63,7 @@ int main() {
 }
 ```
 
-```Java
+```java
 // Java => -1
 public class Fuck{
     public static void main(String[] args) {
@@ -95,7 +95,7 @@ twist(seed, 2*seed)
 = (((seed >> 1) & 0x40000000) | (seed & 0x3fffffff))
 ```
 这个结果就很显然了，其实`twist`最后返回的结果就是把`seed`的最高位右移到次高位，最高位用零填充其余位不变。我们不妨也把这个函数叫做`twist`，亦即：
-```
+```c++
 int32_t twist(int32_t seed) {
     return (((seed >> 1) & 0x40000000) | (seed & 0x3fffffff));
 }
@@ -114,7 +114,7 @@ int32_t twist(int32_t seed) {
 这个思路也同样适用于我们目前还在抛弃考虑的最高两位，因此在`mod 2**30`系统下先找到了合适的解以后再来枚举最高两位就可以得到我们的最终答案了。
 
 如果还有时间精力深入去研究我猜测还会有一些有趣的东西，总之很好玩就是了。顺手贴个简单的`C++`参考代码，食汉三应该不会删吧：
-```C++
+```c++
 #include <iostream>
 #include <vector>
 #include <cstdint>
